@@ -1,0 +1,105 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(PatientDashboard());
+}
+
+class PatientDashboard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Patient Dashboard',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: DashboardScreen(),
+    );
+  }
+}
+
+class DashboardScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Patient Dashboard'),
+      ),
+      body: ListView(
+        children: [
+          ListTile(
+            title: Text('Search Doctor/Treatment'),
+            onTap: () {
+              // Handle search doctor/treatment functionality
+            },
+          ),
+          ListTile(
+            title: Text('Top Doctor'),
+            onTap: () {
+              // Handle top doctor functionality
+            },
+          ),
+          ListTile(
+            title: Text('Request Appointment'),
+            onTap: () {
+              // Handle request appointment functionality
+            },
+          ),
+          ListTile(
+            title: Text('Notification'),
+            onTap: () {
+              // Handle notification functionality
+            },
+          ),
+          ListTile(
+            title: Text('Inbox/Show Message'),
+            onTap: () {
+              // Handle inbox/show message functionality
+            },
+          ),
+          ListTile(
+            title: Text('Sending Message'),
+            onTap: () {
+              // Handle sending message functionality
+            },
+          ),
+          ListTile(
+            title: Text('Calling'),
+            onTap: () {
+              // Handle calling functionality
+            },
+          ),
+          ListTile(
+            title: Text('Change Password'),
+            onTap: () {
+              // Handle change password functionality
+            },
+          ),
+          ListTile(
+            title: Text('Update Account'),
+            onTap: () {
+              // Handle update account functionality
+            },
+          ),
+          ListTile(
+            title: Text('Give Rating'),
+            onTap: () {
+              // Handle give rating functionality
+            },
+          ),
+          ListTile(
+            title: Text('Logout Account'),
+            onTap: () {
+              // Handle logout account functionality
+            },
+          ),
+          ListTile(
+            title: Text('Delete Account'),
+            onTap: () {
+              // Handle delete account functionality
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
